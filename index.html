@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NEXA — premium futuristic technology e-commerce showroom.">
+  <title>NEXA — Future, Engineered</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav glass" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Nexa home"><span class="brand-mark">N</span><span>NEXA</span></a>
+      <div class="nav-links">
+        <a href="#shop">Shop</a><a href="#collections">Collections</a><a href="#featured">Featured</a><a href="#about">About</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+        <button class="icon-btn" id="wishBtn" aria-label="Wishlist">♡</button>
+        <button class="cart-btn" id="cartBtn"><span>Cart</span><b id="cartCount">0</b></button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">NEXA / 2026 COLLECTION</p>
+        <h1>Engineered for<br><em>what comes next.</em></h1>
+        <p class="hero-text">Precision technology, sculpted materials and intelligent design — curated for people who expect more from every device.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary magnetic" href="#shop">Shop collection <span>↗</span></a>
+          <a class="btn btn-ghost" href="#featured">Explore products <span>→</span></a>
+        </div>
+        <div class="hero-meta"><span><i></i> Curated technology</span><span>Free shipping over $100</span></div>
+      </div>
+
+      <div class="hero-stage reveal" data-tilt>
+        <div class="platform platform-back"></div>
+        <div class="platform platform-main"></div>
+        <div class="hero-orbit"></div>
+        <div class="hero-product">
+          <div class="product-ring"></div>
+          <div class="headphone">
+            <div class="ear ear-l"></div><div class="headband"></div><div class="ear ear-r"></div>
+          </div>
+          <div class="product-shine"></div>
+        </div>
+        <div class="stage-label glass"><span>NOVA X1</span><small>WIRELESS AUDIO / 01</small></div>
+        <div class="floating-chip glass">01 <span>PRECISION AUDIO</span></div>
+      </div>
+    </section>
+
+    <section class="ticker"><div class="ticker-track"><span>PRECISION</span><i>✦</i><span>PERFORMANCE</span><i>✦</i><span>INTELLIGENT DESIGN</span><i>✦</i><span>PRECISION</span><i>✦</i><span>PERFORMANCE</span><i>✦</i></div></section>
+
+    <section class="section-shell shop-section" id="shop">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">01 / THE STORE</p><h2>Objects worth<br><em>keeping.</em></h2></div>
+        <p>Discover a focused collection of high-performance technology, selected for design, function and everyday impact.</p>
+      </div>
+      <div class="shop-toolbar glass reveal">
+        <div class="categories" id="categoryFilters">
+          <button class="filter active" data-category="All">All</button>
+          <button class="filter" data-category="Audio">Audio</button>
+          <button class="filter" data-category="Computing">Computing</button>
+          <button class="filter" data-category="Wearables">Wearables</button>
+          <button class="filter" data-category="Smart Home">Smart Home</button>
+        </div>
+        <select id="sortSelect" aria-label="Sort products"><option value="featured">Featured</option><option value="newest">Newest</option><option value="low">Price: Low → High</option><option value="high">Price: High → Low</option></select>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="collection section-shell" id="collections">
+      <div class="collection-panel">
+        <div class="collection-copy reveal"><p class="eyebrow">02 / COLLECTION</p><h2>The dark<br><em>collection.</em></h2><p>A study in black surfaces, cool light and uncompromising performance.</p><a class="btn btn-primary" href="#shop">Explore collection <span>↗</span></a></div>
+        <div class="collection-products" data-tilt>
+          <div class="mini-platform"></div>
+          <div class="mini-device device-a"></div><div class="mini-device device-b"></div><div class="mini-device device-c"></div>
+          <span class="collection-tag glass">NEXA / SERIES 02</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell categories-section">
+      <div class="section-heading reveal"><div><p class="eyebrow">03 / CATEGORIES</p><h2>Choose your<br><em>dimension.</em></h2></div></div>
+      <div class="category-showcase">
+        <button class="category-panel reveal" data-category-jump="Audio"><span>01</span><h3>Audio</h3><p>Immersive sound, refined.</p><b>Explore →</b></button>
+        <button class="category-panel reveal" data-category-jump="Computing"><span>02</span><h3>Computing</h3><p>Power without compromise.</p><b>Explore →</b></button>
+        <button class="category-panel reveal" data-category-jump="Wearables"><span>03</span><h3>Wearables</h3><p>Intelligence, closer.</p><b>Explore →</b></button>
+      </div>
+    </section>
+
+    <section class="featured section-shell" id="featured">
+      <div class="featured-copy reveal"><p class="eyebrow">04 / FEATURED OBJECT</p><h2>NOVA <span>X1</span></h2><p class="large-desc">A wireless listening system engineered around spatial detail, adaptive comfort and a silhouette designed to disappear.</p><div class="price-line"><strong>$349</strong><span>★★★★★ <small>4.9 / 5</small></span></div><div class="featured-actions"><button class="btn btn-primary add-featured" data-id="1">Add to cart <span>+</span></button><button class="btn btn-ghost" id="quickFeatured">Quick view <span>↗</span></button></div><div class="specs"><div><small>DRIVER</small><b>40MM</b></div><div><small>BATTERY</small><b>42 HRS</b></div><div><small>WEIGHT</small><b>248 G</b></div></div></div>
+      <div class="featured-visual" data-tilt><div class="feature-platform"></div><div class="feature-headphone"><div class="fh-ear"></div><div class="fh-band"></div><div class="fh-ear right"></div></div><div class="feature-light"></div><span class="serial glass">NX / X1 / 001</span></div>
+    </section>
+
+    <section class="trust section-shell" id="about">
+      <div class="stats reveal"><div><strong>10K<span>+</span></strong><small>Customers</small></div><div><strong>4.9<span>/5</span></strong><small>Average rating</small></div><div><strong>24<span>H</span></strong><small>Fast dispatch</small></div><div><strong>2<span>YR</span></strong><small>Warranty</small></div></div>
+      <div class="quote reveal"><span class="quote-mark">“</span><blockquote>Technology should feel considered — not complicated.</blockquote><p>NEXA / DESIGN PRINCIPLE</p></div>
+    </section>
+
+    <section class="final-cta section-shell">
+      <div class="cta-inner reveal"><p class="eyebrow">05 / YOUR NEXT OBJECT</p><h2>Ready to upgrade<br><em>your setup?</em></h2><p>Explore products designed for people who expect more from their technology.</p><a class="btn btn-primary magnetic" href="#shop">Explore the collection <span>↗</span></a></div>
+    </section>
+  </main>
+
+  <footer class="footer section-shell">
+    <div class="footer-top"><a class="brand" href="#home"><span class="brand-mark">N</span><span>NEXA</span></a><p>Future-facing technology<br>for everyday life.</p><div class="footer-links"><div><small>SHOP</small><a href="#shop">All products</a><a href="#collections">Collections</a><a href="#featured">Featured</a></div><div><small>SUPPORT</small><a href="#">Shipping</a><a href="#">Returns</a><a href="#">Warranty</a></div><div><small>CONNECT</small><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">LinkedIn</a></div></div></div>
+    <div class="footer-bottom"><span>© 2026 NEXA. All rights reserved.</span><span>Designed & developed as a premium e-commerce concept.</span></div>
+  </footer>
+
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-head"><h2>Your cart</h2><button class="close-btn" data-close>×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer"><div><span>Subtotal</span><strong id="cartTotal">$0</strong></div><button class="btn btn-primary checkout">Checkout <span>→</span></button><small>Taxes and shipping calculated at checkout.</small></div>
+  </aside>
+  <div class="drawer-overlay" id="overlay"></div>
+
+  <div class="search-overlay" id="searchOverlay">
+    <button class="close-btn search-close" data-close-search>×</button>
+    <div class="search-box"><p class="eyebrow">SEARCH / NEXA STORE</p><h2>Find your next<br><em>object.</em></h2><input id="searchInput" type="search" placeholder="Search products..." autocomplete="off"><div id="searchResults"></div></div>
+  </div>
+
+  <div class="modal" id="quickModal"><div class="modal-card glass"><button class="close-btn" data-close-modal>×</button><div id="modalContent"></div></div></div>
+  <div class="toast" id="toast">✓ Added to your cart</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
